@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survei Minat Olahraga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+        <h1>Formulir Survei Minat Olahraga</h1>
+
+        <form>
+            <label for="name">Nama:</label><br>
+            <input type="text" id="name" name="name" required placeholder="Masukkan Nama Kamu"><br>
+
+            <label for="age">Umur:</label><br>
+            <input type="number" id="age" name="age" min="10" max="100" placeholder="Masukkan Umurmu"><br>
+
+            <label>Jenis Olahraga Favorit</label><br>
+
+            <input type="radio" id="indoor" name="type" value="Indoor" required>
+            <label for="indoor">Indoor</label><br>
+
+            <input type="radio" id="outdoor" name="type" value="Outdoor" required>
+            <label for="outdoor">Outdoor</label><br>
+
+            <input type="radio" id="both" name="type" value="Both" required>
+            <label for="both">Keduanya</label><br>
+
+            <label for="favorite-sport">Olahraga Favorit untuk Ditonton:</label><br>
+            <input type="text" id="favorite-sport" name="favorite-sport" required placeholder="Olahraga Favorit yang Ingin Kamu Tonton?"><br>
+
+            <label for="favorite--sport">Olahraga Favorit untuk Dimainkan:</label><br>
+            <input type="text" id="favorite--sport" name="favorite--sport" required placeholder="Olahraga Favorit yang Ingin Kamu Dimainkan?"><br>
+
+            <label for="favorite-sport-person">Olahragawan Favorit:</label><br>
+            <input type="text" id="favorite-sport-person" name="favorite-sport-person" required placeholder="Siapa Olahragawan Favoritmu?"><br>
+
+            <label for="feedback">Pemikiran Anda Tentang Olahraga (optional):</label><br>
+            <textarea id="feedback" name="feedback" placeholder="Bagaimana Pemikiran Mu?"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
